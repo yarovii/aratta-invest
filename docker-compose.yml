@@ -1,40 +1,28 @@
 version: '3'
 
 services:
-#  db:
-#    restart: always
-#    container_name: db
-#    image: mysql
-#    environment:
-#      MYSQL_DATABASE: arattaDB
-#      MYSQL_ROOT_PASSWORD: root
-#      MYSQL_ROOT_HOST: toor
-#
-#    volumes:
-#    - ./sql:/docker-entrypoint-initdb.d
-##    ports:
-##    - "33060:3306"
-#    expose:
-#      - "33060"
-#
-#    networks:
-#        - def
-  db:
+  mysql_db:
+    image: mysql:5.7
     restart: always
-    container_name: "postgresDb"
-    image: postgres:latest
-    ports:
-      - 54320:5432
+    container_name: "mysql_db"
     environment:
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "toor"
-      POSTGRES_DB: aratta
+      MYSQL_DATABASE: user_info
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      MYSQL_ROOT_PASSWORD: toor
+    ports:
+      - '3308:3306'
+    expose:
+      - '3306'
     volumes:
-      - my_dbdata:/var/lib/postgresql/data
+      - my_db:/var/lib/mysql
+    networks:
+      - def
 
   app:
     container_name: app
     restart: always
+#    command: "mvn clean spring-boot:run"
     build:
       context: "."
       dockerfile: Dockerfile
@@ -42,30 +30,19 @@ services:
       - "8080:8080"
     expose:
       - "8080"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://mysql_db:3306/database?autoReconnect=true&useSSL=false
     networks:
       - def
     depends_on:
-      - db
+      - mysql_db
+    links:
+      - mysql_db
 
 
 networks:
   def:
     driver: bridge
 
-#    network_mode: 'host'
-#  app:
-#    container_name: app
-#    restart: always
-##    build: ./
-#    build: .
-#      context: ./
-#      dockerfile: Dockerfile
-#
-#    expose:
-#    - "8081"
-#    ports:
-#    - "8081:8081"
-##    environment:
-##    WAIT_HOSTS: mysql:3306
-#    depends_on:
-#    - db
+volumes:
+  my_db:

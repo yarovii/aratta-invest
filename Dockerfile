@@ -1,5 +1,12 @@
 FROM openjdk:8-jdk-alpine
+FROM maven:alpine
+##Saves dependencies => do not reinstall them
+WORKDIR /application
+ADD pom.xml /application
+RUN mvn verify clean --fail-never
+
+COPY . /application
+RUN mvn -v
+RUN mvn clean install -DskipTests
 EXPOSE 8080
-ARG JAR_FILE=target/arattaInvest.jar
-ADD ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/application/target/arattaInvest.jar"]
