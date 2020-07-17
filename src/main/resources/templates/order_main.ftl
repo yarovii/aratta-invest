@@ -12,21 +12,21 @@
                     </div>
                     <div class="card-body">
                         <div class="form-group row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">D</label>
+                            <label class="col-sm-2 col-form-label">D</label>
                             <div class="col">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                                <input type="number" class="form-control" id="sizeD" placeholder="">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">*d</label>
+                            <label class="col-sm-2 col-form-label">*d</label>
                             <div class="col">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                                <input type="number" class="form-control" id="sizeSmD" placeholder="">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">L</label>
+                            <label class="col-sm-2 col-form-label">L</label>
                             <div class="col">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                                <input type="number" class="form-control" id="sizeL" placeholder="">
                             </div>
                         </div>
 <#--                        <input type="hidden" name="_csrf" value="${_csrf.token}" />-->
@@ -44,21 +44,21 @@
                     </div>
                     <div class="card-body">
                         <div class="form-group row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">H</label>
+                            <label class="col-sm-2 col-form-label">H</label>
                             <div class="col">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                                <input type="number" class="form-control" id="sizeH" placeholder="">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">B</label>
+                            <label class="col-sm-2 col-form-label">B</label>
                             <div class="col">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                                <input type="number" class="form-control" id="sizeB" placeholder="">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">L</label>
+                            <label class="col-sm-2 col-form-label">L</label>
                             <div class="col">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                                <input type="number" class="form-control" id="sizeL" placeholder="">
                             </div>
                         </div>
 <#--                        <input type="hidden" name="_csrf" value="${_csrf.token}" />-->
