@@ -1,5 +1,6 @@
 package eu.cz.yarovii.arrattainvest.model;
 
 public interface DetailInterface {
-    private String name;
+    boolean validate(Detail d);
+    float calculateWeight(Detail d);
 }

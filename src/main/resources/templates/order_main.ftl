@@ -14,19 +14,19 @@
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">D</label>
                             <div class="col">
-                                <input type="number" class="form-control" id="sizeD" placeholder="">
+                                <input type="number" class="form-control <#if invalid >text-danger</#if>" name="DorH"placeholder="" value="300">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
                             <label class="col-sm-2 col-form-label">*d</label>
                             <div class="col">
-                                <input type="number" class="form-control" id="sizeSmD" placeholder="">
+                                <input type="number" class="form-control" name="dOrB" placeholder=""value="0">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
                             <label class="col-sm-2 col-form-label">L</label>
                             <div class="col">
-                                <input type="number" class="form-control" id="sizeL" placeholder="">
+                                <input type="number" class="form-control" name="L" placeholder=""value="3500">
                             </div>
                         </div>
 <#--                        <input type="hidden" name="_csrf" value="${_csrf.token}" />-->

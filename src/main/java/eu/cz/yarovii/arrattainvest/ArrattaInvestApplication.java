@@ -1,9 +1,7 @@
 package eu.cz.yarovii.arrattainvest;
 
-import eu.cz.yarovii.arrattainvest.businessLogic.FillOrder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class ArrattaInvestApplication {
