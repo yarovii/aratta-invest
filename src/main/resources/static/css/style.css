@@ -1,0 +1,43 @@
+* {
+    margin:0;
+    padding:0
+}
+
+body {
+    background-position: 0 -10px;
+    background-image: url("../img/aratta_logo_rus.jpg");
+    background-size: 119px 48px;
+    background-color: #F8F8F8;
+    background-blend-mode: lighten, normal;
+}
+
+label {
+    white-space: nowrap;
+}
+
+#img_order_page {
+    width: 150px;
+    height: 200px;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#logo {
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    width: 127px;
+    height: 53px;
+    background-image: url("../img/aratta_logo_rus.jpg");
+    background-size: 127px 53px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#nav {
+    background: #B12828;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
