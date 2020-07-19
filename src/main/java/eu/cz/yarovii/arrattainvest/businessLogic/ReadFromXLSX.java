@@ -10,7 +10,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ReadFromXLSX {
@@ -34,15 +33,11 @@ public class ReadFromXLSX {
 
     private void findSheetIndex(String name){
         for(Sheet sheet: workbook) {
-            System.err.println(sheet.getSheetName()+"   SHEET  name      l     here     ..............");
             if(sheet.getSheetName().equals(name)){
                 this.sheet = sheet;
-
-                System.err.println(sheet.getSheetName()+"   SHEET        l     here     ..............");
                 break;
             }
         }
-        System.err.println("   NOOOO SHEET        l     here     ..............");
 
     }
 
@@ -55,7 +50,6 @@ public class ReadFromXLSX {
         int counter=0;
 
         row = sheet.getRow(sheet.getFirstRowNum());
-        System.err.println("row        l     here     ..............");
 
         for (Cell cell : row) {
             s = cell.toString();

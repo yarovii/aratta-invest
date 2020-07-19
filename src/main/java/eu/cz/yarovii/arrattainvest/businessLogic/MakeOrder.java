@@ -15,7 +15,6 @@ public class MakeOrder {
 
         if(!detailValidation.validateAll(detail))
             return false;
-        System.err.println(" l     here     ..............");
 
         return findInformation.putAllInfo(detail);
     }

@@ -31,7 +31,6 @@ public class DetailValidation {
 
     public boolean validateSmoothRound(Detail detail){
         if(SpecificDetails.SMOOTHROUND.validate(detail)) {
-            System.err.println("VALIDATION         here     ..............");
             detail.setType(SpecificDetails.SMOOTHROUND);
             detail.setSheetName("smooth_round");
             return true;
