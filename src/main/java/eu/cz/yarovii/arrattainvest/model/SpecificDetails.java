@@ -12,7 +12,7 @@ public enum SpecificDetails implements DetailInterface{
     SMOOTHROUND{
         @Override
         public boolean validate(Detail detail) {
-            return detail.getL() < (1.2 * detail.getDorH()) || detail.getL() > (30*detail.getDorH());
+            return detail.getL() >= (1.2 * detail.getDorH()) && detail.getL() <= (30*detail.getDorH());
         }
 
         @Override

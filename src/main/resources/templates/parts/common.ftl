@@ -10,7 +10,7 @@
         <title>Aratta Invest</title>
         <link rel="stylesheet" href="css/bootstrap.min.css" >
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-
+<#--        <link rel="stylesheet" type="text/css" href="css/style.css" />-->
     </head>
     <@n.nav "${pageName}"/>
     <div class="container mt-4 pb-4">
