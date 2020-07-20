@@ -20,6 +20,12 @@ label {
     height: 200px;
 }
 
+.img_specification_page {
+    max-width: none;
+    width: 3050px;
+    height: 200px;
+}
+
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
