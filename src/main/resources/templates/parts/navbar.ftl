@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse mx-auto" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link <#if pageName == "m">active</#if>" href="/">Главная<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link <#if pageName == "o">active</#if>" href="/order">Расчет заказа</a>
+                    <a class="nav-item nav-link <#if pageName == "o">active</#if>" href="/detail">Расчет заказа</a>
                     <a class="nav-item nav-link <#if pageName == "p">active</#if>" href="/products">Продукция</a>
                     <a class="nav-item nav-link <#if pageName == "s">active</#if>" href="/standarts">Стандарты</a>
                     <a class="nav-item nav-link <#if pageName == "c">active</#if>" href="/contacts">Контакты</a>
